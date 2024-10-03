@@ -250,7 +250,7 @@ h3 {
 /* Carrusel */
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 450px;
     margin: auto;
     overflow: hidden;
     text-align: center;
@@ -292,6 +292,40 @@ h3 {
 }
 
 
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.close:hover {
+    color: #ff0000;
+}
 
 
 

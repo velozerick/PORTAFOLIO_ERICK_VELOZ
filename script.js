@@ -17,4 +17,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//CERTIFICADOS Y RECONOCIMIENTOS
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.certificado');
+    const totalSlides = slides.length;
+    currentSlide += direction;
+
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+function openLightbox(element) {
+    var lightbox = document.getElementById("lightbox");
+    var zoomedImage = document.getElementById("zoomedImage");
+    zoomedImage.src = element.src;
+    lightbox.style.display = "flex";  // Mostrar el lightbox en modo 'flex'
+}
+
+function closeLightbox() {
+    var lightbox = document.getElementById("lightbox");
+    lightbox.style.display = "none";  // Ocultar el lightbox
+}
 

@@ -16,8 +16,8 @@
         <ul>
             <li><a href="#">¡Hola!</a></li>
             <li><a href="#Habilidades">Habilidades</a></li>
-            <li><a href="#">Más sobre mí</a></li>
-            <li><a href="#">Proyectos</a></li>
+            <li><a href="#sobre-mi">Más sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#">Contáctame</a></li>
         </ul>
     </nav>
@@ -172,19 +172,94 @@
     <div class="carousel-container">
         <div class="carousel">
             <div class="certificados">
-                <img src="img/1.jpg" alt="Certificado 1" class="certificado">
-                <img src="img/2.png" alt="Certificado 2" class="certificado">
-                <img src="img/3.png" alt="Certificado 3" class="certificado">
-                <img src="img/4.png" alt="Certificado 4" class="certificado">
-                <img src="img/5.jpg" alt="Certificado 5" class="certificado">
-                <img src="img/6.jpg" alt="Certificado 6" class="certificado">
+                <img src="img/3.png" alt="Certificado 3" class="certificado" onclick="openLightbox(this)">
+                <img src="img/2.png" alt="Certificado 2" class="certificado" onclick="openLightbox(this)">
+                <img src="img/1.jpg" alt="Certificado 1" class="certificado" onclick="openLightbox(this)">
+                <img src="img/4.png" alt="Certificado 4" class="certificado" onclick="openLightbox(this)">
+                <img src="img/5.jpg" alt="Certificado 5" class="certificado" onclick="openLightbox(this)">
+                <img src="img/6.jpg" alt="Certificado 6" class="certificado" onclick="openLightbox(this)">
             </div>
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
+
+    <!-- Lightbox para mostrar la imagen ampliada -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="zoomedImage">
+    </div>
 </section>
 
+
+<!--PROYECTOS-->
+
+<!-- Sección Proyectos -->
+<section id="proyectos" class="proyectos-section">
+    <h2>Proyectos Recientes</h2>
+    <div class="projects-container">
+        <!-- Proyecto 1 - Astroveloxer -->
+        <div class="project-card">
+            <a href="https://astroveloxer.com" target="_blank">
+                <img src="img/astroveloxer.png" alt="Astroveloxer" class="project-image">
+            </a>
+            <h3>Astroveloxer</h3>
+            <p>Página web enfocada a la astrofotografía.</p>
+        </div>
+
+        <!-- Proyecto 2 - Página web para salón de fiestas -->
+        <div class="project-card">
+            <a href="https://tu-url-salon.com" target="_blank">
+                <img src="img/salon.png" alt="Salón de fiestas" class="project-image">
+            </a>
+            <h3>SPLASHGARDEN</h3>
+            <p>Plataforma para reservas y diversión en eventos.</p>
+        </div>
+
+        <!-- Proyecto 3 - Página web de cafetería -->
+        <div class="project-card">
+            <a href="https://tu-url-cafeteria.com" target="_blank">
+                <img src="img/dulce.png" alt="Cafetería" class="project-image">
+            </a>
+            <h3>Página web de cafetería</h3>
+            <p>Sitio web de cafetería con menús, promociones y pedidos en línea.</p>
+        </div>
+
+        <!-- Proyecto 4 - MRS Monitoreo y Rendimiento -->
+        <div class="project-card">
+            <a href="https://tu-url-mrs.com" target="_blank">
+                <img src="img/IMG_4581.PNG" alt="MRS" class="project-image">
+            </a>
+            <h3>MRS - Monitoreo y rendimiento de software</h3>
+            <p>Aplicación web personalizada para monitorear el rendimiento de software.</p>
+        </div>
+
+        <!-- Proyecto 5 - VELOXERNET Domótica -->
+        <div class="project-card">
+            <a href="https://tu-url-veloxernet.com" target="_blank">
+                <img src="img/veloxernet.jpg" alt="VELOXERNET" class="project-image">
+            </a>
+            <h3>VELOXERNET - Domótica</h3>
+            <p>Aplicación para el control remoto de dispositivos de hogar inteligente, desarrollada para manejar luces y puertas.</p>
+        </div>
+
+        <!-- Proyecto 6 - Robot Humanoide -->
+        <div class="project-card">
+            <img src="img/IMG_4583.PNG" alt="Robot Humanoide" class="project-image">
+            <h3>Robot Humanoide</h3>
+            <p>Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.</p>
+        </div>
+
+         <!-- Proyecto 7 - VELOXSAFEKEY -->
+         <div class="project-card">
+            <a href="https://velozerick.github.io/VLOXSAFEKEY/" target="_blank">
+                <img src="img/safe.png" alt="VELOXSAFEKEY" class="project-image">
+            </a>
+            <h3>VELOXSAFEKEY</h3>
+            <p>Aplicación que te permite guardar y generar contraseñas vinculándolas a una cuenta.</p>
+        </div>
+    </div>
+</section>
 
 
 
