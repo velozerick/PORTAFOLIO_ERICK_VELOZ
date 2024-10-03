@@ -18,7 +18,7 @@
             <li><a href="#Habilidades">Habilidades</a></li>
             <li><a href="#sobre-mi">Más sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#">Contáctame</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
         </ul>
     </nav>
 
@@ -192,8 +192,6 @@
 </section>
 
 
-<!--PROYECTOS-->
-
 <!-- Sección Proyectos -->
 <section id="proyectos" class="proyectos-section">
     <h2>Proyectos Recientes</h2>
@@ -203,16 +201,16 @@
             <a href="https://astroveloxer.com" target="_blank">
                 <img src="img/astroveloxer.png" alt="Astroveloxer" class="project-image">
             </a>
-            <h3>Astroveloxer</h3>
+            <h3 class="titulo-astroveloxer">Astroveloxer</h3>
             <p>Página web enfocada a la astrofotografía.</p>
         </div>
 
-        <!-- Proyecto 2 - Página web para salón de fiestas -->
+        <!-- Proyecto 2 - SPLASHGARDEN -->
         <div class="project-card">
             <a href="https://tu-url-salon.com" target="_blank">
                 <img src="img/salon.png" alt="Salón de fiestas" class="project-image">
             </a>
-            <h3>SPLASHGARDEN</h3>
+            <h3 class="titulo-salon">SPLASHGARDEN</h3>
             <p>Plataforma para reservas y diversión en eventos.</p>
         </div>
 
@@ -221,7 +219,7 @@
             <a href="https://tu-url-cafeteria.com" target="_blank">
                 <img src="img/dulce.png" alt="Cafetería" class="project-image">
             </a>
-            <h3>Página web de cafetería</h3>
+            <h3 class="titulo-cafeteria">Página web de cafetería</h3>
             <p>Sitio web de cafetería con menús, promociones y pedidos en línea.</p>
         </div>
 
@@ -230,7 +228,7 @@
             <a href="https://tu-url-mrs.com" target="_blank">
                 <img src="img/IMG_4581.PNG" alt="MRS" class="project-image">
             </a>
-            <h3>MRS - Monitoreo y rendimiento de software</h3>
+            <h3 class="titulo-mrs">MRS - Monitoreo y rendimiento de software</h3>
             <p>Aplicación web personalizada para monitorear el rendimiento de software.</p>
         </div>
 
@@ -239,15 +237,15 @@
             <a href="https://tu-url-veloxernet.com" target="_blank">
                 <img src="img/veloxernet.jpg" alt="VELOXERNET" class="project-image">
             </a>
-            <h3>VELOXERNET - Domótica</h3>
+            <h3 class="titulo-veloxernet">VELOXERNET - Domótica</h3>
             <p>Aplicación para el control remoto de dispositivos de hogar inteligente, desarrollada para manejar luces y puertas.</p>
         </div>
 
         <!-- Proyecto 6 - Robot Humanoide -->
         <div class="project-card">
             <img src="img/IMG_4583.PNG" alt="Robot Humanoide" class="project-image">
-            <h3>Robot Humanoide</h3>
-            <p>Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.</p>
+            <h3 class="titulo-robot">Robot Humanoide</h3>
+            <p>Desarrollo de un robot humanoide .</p>
         </div>
 
          <!-- Proyecto 7 - VELOXSAFEKEY -->
@@ -255,9 +253,37 @@
             <a href="https://velozerick.github.io/VLOXSAFEKEY/" target="_blank">
                 <img src="img/safe.png" alt="VELOXSAFEKEY" class="project-image">
             </a>
-            <h3>VELOXSAFEKEY</h3>
+            <h3 class="titulo-veloxsafekey">VELOXSAFEKEY</h3>
             <p>Aplicación que te permite guardar y generar contraseñas vinculándolas a una cuenta.</p>
         </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Sección Contacto -->
+<section id="contacto" class="contacto-section">
+    <h2 data-translate="Contáctame">Contáctame</h2>
+    <p class="contact-description" data-translate="Estoy disponible para colaboraciones, proyectos o cualquier consulta. ¡No dudes en contactarme!">Estoy disponible para colaboraciones, proyectos o cualquier consulta. ¡No dudes en contactarme!</p>
+
+    <!-- Formulario de contacto -->
+    <form class="contact-form" action="enviar.php" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required data-translate="Tu nombre">
+        <input type="email" name="email" placeholder="Tu email" required data-translate="Tu email">
+        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" "></textarea>
+        <button type="submit" data-translate="Enviar mensaje">Enviar mensaje</button>
+    </form>
+
+    <!-- Redes sociales -->
+    <div class="social-icons">
+        <a href="https://github.com/velozerick" target="_blank" class="icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
     </div>
 </section>
 

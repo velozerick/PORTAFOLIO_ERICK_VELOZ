@@ -46,3 +46,5 @@ function closeLightbox() {
     lightbox.style.display = "none";  // Ocultar el lightbox
 }
 
+
+
